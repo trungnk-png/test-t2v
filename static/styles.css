@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f6f6f6; color: #222; font: 16px/1.5 Arial, sans-serif; }
+.topbar { max-width: 960px; margin: auto; padding: 24px 20px 16px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+h1 { margin: 0; font-size: 24px; }
+.system-status { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #555; }
+.status-dot { width: 8px; height: 8px; border-radius: 50%; background: #888; }
+.status-dot.online { background: #278044; }
+main { max-width: 960px; margin: auto; padding: 0 20px 32px; }
+.workspace { display: grid; gap: 20px; }
+.composer, .result-panel { padding: 24px; background: white; border: 1px solid #ddd; border-radius: 6px; }
+.field-head { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.field-head label { font-weight: 600; }
+#charCount { color: #666; font-size: 13px; }
+textarea { width: 100%; min-height: 150px; resize: vertical; padding: 12px; border: 1px solid #aaa; border-radius: 4px; font: inherit; }
+textarea:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid #245caa; outline-offset: 3px; }
+.controls { margin-top: 12px; }
+button { padding: 10px 22px; border: 1px solid #222; border-radius: 4px; background: #222; color: white; font: inherit; cursor: pointer; }
+button:hover { background: #444; }
+button:disabled { opacity: .5; cursor: wait; }
+.error { color: #b42318; margin: 12px 0 0; }
+.error:empty { display: none; }
+.result-panel { min-height: 220px; }
+.empty-state, .progress-state { padding: 32px 0; text-align: center; color: #666; }
+h2 { margin: 0 0 8px; font-size: 18px; color: #222; }
+p { margin: 8px 0; }
+.progress-track { height: 8px; background: #eee; margin: 20px auto 12px; max-width: 480px; border-radius: 4px; overflow: hidden; }
+.progress-track span { display: block; width: 0; height: 100%; background: #555; }
+video { display: block; width: 100%; max-height: 540px; background: #000; }
+.video-meta { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 12px; font-size: 14px; }
+.video-meta div { display: flex; flex-direction: column; }
+a { color: #245caa; }
+.hidden { display: none !important; }
+@media (max-width: 560px) { .topbar { align-items: flex-start; flex-direction: column; gap: 8px; } .composer, .result-panel { padding: 16px; } }

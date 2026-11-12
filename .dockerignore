@@ -1,0 +1,9 @@
+models/
+comfy_output/
+outputs/
+__pycache__/
+**/__pycache__/
+*.pyc
+tests/
+.git/
+ComfyUI/
